@@ -1,0 +1,6 @@
+jupyter
+langchain
+open-interpreter
+openai
+pandas
+seaborn

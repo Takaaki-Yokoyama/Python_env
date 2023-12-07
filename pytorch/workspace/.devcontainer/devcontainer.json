@@ -1,0 +1,18 @@
+{
+    "name": "Python_pytorch",                    // VScodeがコンテナに接続したときのタイトルを自由に設定
+    "image": "my-nvidia-pytorch:12.2.0-base-ubuntu22.04",
+    "workspaceFolder": "/workspace/src",         // VScode接続時に開くフォルダを指定
+    //"workspaceMount": "type=bind, source=../src, target=/workspace/src",
+    "customizations": {
+        "vscode": {
+            "extensions": [                     // コンテナ作成時にインストールする拡張機能を記載　
+                "ms-python.python",             // python拡張機能
+                "ms-toolsai.jupyter"            // jupyter拡張機能
+            ],
+            "settings": {                       // VScodeの設定を記載
+                "files.autoSave": "afterDelay"  // ファイルのオートセーブ
+            }
+        }
+    },
+    "runArgs": ["--gpus=all"]         // gpuを使用
+}
