@@ -1,7 +1,7 @@
 {
-    "name": "open_interpreter",                    // VScodeがコンテナに接続したときのタイトルを自由に設定
+    "name": "langchain",                    // VScodeがコンテナに接続したときのタイトルを自由に設定
     "dockerComposeFile": "docker-compose.yml",  // docker-conpose.ymlファイルを指定
-    "service": "open_interpreter",                        // docker-conpose.ymlファイル内に記載したサービス名を指定
+    "service": "langchain",                        // docker-conpose.ymlファイル内に記載したサービス名を指定
     "workspaceFolder": "/workspace/src",         // VScode接続時に開くフォルダを指定
     "customizations": {
         "vscode": {
